@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000",
+    "typings": "^2.1.1"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "klaw-sync": "^6.0.0",
+    "markdown-it": "^8.4.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register ./__test__/**/*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
