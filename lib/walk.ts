@@ -1,8 +1,8 @@
 let fs = require("fs");
 const klawSync = require('klaw-sync')
 
-function walk(path = './__test__/test-files') {
-    let paths = klawSync(path);
+function walk(path = './') {
+    let paths = klawSync(path, { nodir: true });
     paths = paths.map(v => v.path);
     return paths;
 }
